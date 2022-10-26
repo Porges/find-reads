@@ -3,7 +3,16 @@
     "name": "FindReads",
     "version": "0.1",
     "description": "Find GoodReads books on OverDrive",
-
+    "permissions": [
+        "storage"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
     "content_scripts": [
         {
             "js": [
